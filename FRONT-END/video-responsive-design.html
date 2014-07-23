@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Video Responsive</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1">
+</head>
+<style type="text/css">
+	body{
+	font-family: Arial;
+}
+#wrapper{ /* Contenedor general */
+	max-width: 1000px;
+	margin: auto;
+}
+.col1,
+.col2{ /* Las 2 columnas tendran un ancho del 50% y con el Left haremos que una se ponga al costado de la otra*/
+	width: 50%;
+	float: left;
+}
+.col1{
+	background: red;
+}
+.col2{
+	background: green;
+}
+/* 1°- Esto hace la magia usando un padding extraño, que hace que el video tenga proporcion 16/9 */
+.contenedor{ /*contenedor padre del video*/
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%; /* Esto en css nos da la proporcion 16/9 */
+	padding-top: 30px; /* Junto con el otro padding y el position, logramos el 16/9 */
+	position: relative;
+}
+/* Aqui das el soporte a los diferente tipos de videos insertados que existen */
+.contenedor iframe,
+.contenedor object,
+.contenedor embed,
+.contenedor video{ /* 2°- Con esto hacemos que se estire todo lo que pueda*/
+	height:100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%; 
+}
+@media screen and (max-width: 1000px){ /* A los 1000px, se pasara a una sola columna */
+	.col1,
+	.col2{
+		width: auto;
+	}	
+}
+</style>
+<body><!-- 47 -->
+	<div id="wrapper">
+		<div class="col1">
+			<h1>Video Responsive con Mejorandola</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, doloremque harum quo praesentium dolor nisi deleniti! Atque, maiores in adipisci rem unde eveniet minus quo numquam velit voluptatibus. Ad, error.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, doloremque harum quo praesentium dolor nisi deleniti! Atque, maiores in adipisci rem unde eveniet minus quo numquam velit voluptatibus. Ad, error.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, doloremque harum quo praesentium dolor nisi deleniti! Atque, maiores in adipisci rem unde eveniet minus quo numquam velit voluptatibus. Ad, error.
+			</p>			
+		</div>
+		<div class="col2">
+			<h2>Aprende Stylus</h2>
+			<div class="contenedor">
+				<iframe width="560" height="315" src="//www.youtube.com/embed/k9tQRA0Hly8" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt facilis quam tempore eius mollitia nihil adipisci sit fugit deleniti nostrum. Velit, iste eaque soluta alias quidem at ipsa molestiae nobis.
+			</p>
+		</div>		
+	</div>	
+</body>
+</html>

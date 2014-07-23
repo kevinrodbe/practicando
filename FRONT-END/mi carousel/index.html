@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mi carousel</title>
+	<link rel="stylesheet" href="css/style.css"></link>
+</head>
+<body>
+	<section>
+		<a href="#" id="anterior">&laquo;</a>		
+		<div id="marco">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</div>
+		<a href="#" id="siguiente">&raquo;</a>
+	</section>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		$('#marco').carousel('#anterior','#siguiente');
+	</script>
+</body>
+</html>

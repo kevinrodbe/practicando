@@ -1,0 +1,1304 @@
+@import "nib"
+vendor-prefixes = webkit o ms moz official
+azul = #22BCE0
+gris_texto= #7A7A7A
+gris_oscuro = #444
+verde=#009966
+verde2=rgba(0, 153, 102, 0.3)
+dorado_oscuro=#F6BD39
+gris_fondo=#e8e8e8
+azul2=#00aeda
+azul-claro=#4CDDF3
+verde_brillante=#2ECC71
+rojo1=#F14854
+azul3=#008FD5
+verde-azulado=#0dc0c0
+rojo2=#E40650
+azul-fb=#008AFF
+verde-azulado2=#48C9B0
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300);
+@font-face {
+	font-family: "Flaticon";
+	src: url("../font/flaticon.eot");
+	src: url("../font/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../font/flaticon.woff") format("woff"),
+	url("../font/flaticon.ttf") format("truetype"),
+	url("../font/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+font-style: normal;
+}.flaticon-arrow97:before {	content: "\e000";}
+.flaticon-black241:before {	content: "\e001";}
+.flaticon-brush7:before {	content: "\e002";}
+.flaticon-bug4:before {	content: "\e003";}
+.flaticon-cinema18:before {	content: "\e004";}
+.flaticon-circuit1:before {	content: "\e005";}
+.flaticon-close13:before {	content: "\e006";}
+.flaticon-code13:before {	content: "\e007";}
+.flaticon-download61:before {	content: "\e008";}
+.flaticon-facebook43:before {	content: "\e009";}
+.flaticon-gearwheels:before {	content: "\e00a";}
+.flaticon-idea14:before {	content: "\e00b";}
+.flaticon-light28:before {	content: "\e00c";}
+.flaticon-out:before {	content: "\e00d";}
+.flaticon-page63:before {	content: "\e00e";}
+.flaticon-person8:before {	content: "\e00f";}
+.flaticon-person90:before {	content: "\e010";}
+.flaticon-puzzle25:before {	content: "\e011";}
+.flaticon-responsive2:before {	content: "\e012";}
+.flaticon-rocket48:before {	content: "\e013";}
+.flaticon-timetable1:before {	content: "\e014";}
+.flaticon-twitter35:before {	content: "\e015";}
+.flaticon-website8:before {	content: "\e016";}
+body
+	font-family Oxygen
+	font-size 16px
+a
+	text-decoration none !important
+.contenedor {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+@media (min-width: 768px) {
+    .contenedor {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .contenedor {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .contenedor {
+        width: 1170px;
+    }
+}
+.subtitulo
+	text-align center
+	color #000
+	font-size 46px
+	padding 0.5em 0 0.1em 0
+.subrayado
+	width 15%
+	border-top 4px solid azul-claro
+	margin 0.5em auto 2em auto
+.navbar
+	margin 0
+	color #fff
+	background #000
+	transition all 0.5s
+	.contenedor
+		padding 5px 20px
+		transition padding 0.5s ease-out
+		.navbar-header
+			.navbar-toggle
+				border-color #74c7d5
+				.icon-bar
+					background #74c7d5
+			.navbar-brand
+				color #fff
+				padding 10px
+				font-family Oxygen
+				font-size 24px
+				font-weight 100
+				text-shadow black 2px 2px 1px
+				span
+					font-size 24px
+					font-weight lighter
+					font-family Raleway
+		.navbar-collapse
+			.nav
+				li
+					margin 0 5px
+					border 2px solid transparent
+					a
+						padding 8px 5px
+						font-size 18px
+						font-weight 400
+						background transparent
+						color #fff
+						text-shadow black 2px 2px 1px
+					&:hover
+						border-color verde-azulado
+						transition all 0.7s
+@media (min-width: 768px)
+	.navbar
+		padding-top 10px
+		background transparent !important
+		.contenedor
+			.navbar-header
+				.navbar-brand
+					padding 0 10px
+					font-size 30px
+.pantalla
+	background-image url('../images/header-bg.jpg')
+	background-repeat no-repeat
+	background-size cover
+	-webkit-background-size cover
+	-moz-background-size cover
+	-o-background-size cover
+	background-attachment fixed
+	background-position 50% 50%
+	color azul-claro
+	min-height 500px
+	padding 0 !important
+	margin-bottom 0
+	position relative
+	.message-box
+		.text-box
+			background rgba(0,0,0, 0.4)
+			width 100%
+			display inline-block
+			font-family Raleway
+			letter-spacing -2px
+			text-shadow #000 1px 1px 1px
+			text-align center
+			.iam
+				font-size 26px
+				font-weight normal
+				padding 10px 0 0 0
+				margin 0
+				line-height 30px
+				color #74c7d5
+				p
+					margin 0
+				span
+					font-weight 300
+					font-size 36px
+					color #2ecc71
+			.iam-slide
+				.flexslider
+					.flex-viewport
+						.slides
+							font-size 56px
+							font-weight 300
+							color azul-claro
+	.down
+		position absolute
+		bottom 13px
+		left 50%
+		width 50px
+		color azul2
+		font-size 50px !important
+		padding 0
+		margin 0 -25px
+		.flaticon-arrow97
+			text-align center
+			font-size 55px !important
+@media (max-width: 768px)
+	.pantalla
+		background-image url('../images/contact-bg.jpg')
+		background-repeat no-repeat
+		background-size cover
+		-webkit-background-size cover
+		-moz-background-size cover
+		-o-background-size cover
+		background-attachment fixed
+		background-position 30% 50%
+@media (min-width: 992px)
+	.pantalla
+		.message-box
+			width 90%
+			margin auto
+			.text-box
+				.iam
+					font-size 40px
+					text-align right
+					line-height 42px
+					padding 10px 0
+					span
+						font-size 44px
+						color #2ECC71
+				.iam-slide
+					.flexslider
+						.flex-viewport
+							.slides
+								font-size 80px
+								font-weight bold
+.about-me
+	background #fff
+	padding-bottom 30px	
+	.about-me-container
+		position relative
+		&:before
+			position absolute
+			content ""
+			left 0
+			right 0
+			margin 0 auto
+			bottom -60px
+			width 0
+			border-left 150px solid transparent
+			border-right 150px solid transparent
+			border-top 30px solid #fff
+		&:after
+			position absolute
+			content ""
+			left 0
+			right 0
+			margin 0 auto
+			top -30px
+			width 0
+			border-left 150px solid transparent
+			border-right 150px solid transparent
+			border-bottom 30px solid #fff
+		.iam-text
+			margin-bottom 20px
+			h2
+				text-align center
+			a
+				transition all 0.5s
+				display block
+				margin auto
+				width 150px
+				text-align center
+				height 40px
+				line-height 35px
+				font-size 30px
+				border 2px solid azul-fb
+				color azul-fb
+				&:hover
+					border-color transparent
+					background azul-fb
+					color #fff
+		.iam-img		
+			.box-avatar
+				position relative
+				display block
+				margin auto
+				max-width 180px			
+				.avatar
+					border-radius 50%
+					width 180px
+					height 180px
+					display block
+					margin auto
+					overflow hidden
+					border 8px solid gris_fondo
+					img
+						width 180px
+						height 180px
+						display block
+						margin auto
+				&:hover
+					.avatar
+						border-color azul
+					.social-contact
+						display block
+						animation:bounceIn .5s
+				.social-contact
+					position absolute
+					width 100%
+					top 50%
+					margin -30px auto
+					display none
+					.social
+						background #fff
+						width 46px
+						height 46px
+						border-radius 50%
+						font-size 20px
+						text-align center
+						padding 0
+						margin auto
+						line-height 36px
+						border 5px solid azul
+						transition all 0.5s
+						&:hover
+							background azul
+							color #fff
+					.pull-left
+						margin-left -20px
+					.pull-right
+						margin-right -20px
+@media (min-width: 768px)
+	.about-me
+		.about-me-container
+			.iam-text
+				a
+					float right
+			&:before
+				border-left-width 300px
+				border-right-width 300px
+			&:after
+				border-left-width 300px
+				border-right-width 300px 
+.scrolled
+	background rgba(0,0,0, 0.8) !important
+@media (max-width:768px)
+	.scrolled
+		background #000 !important
+/* ROTATE WORDS */
+.rotate-words
+	display inline-block
+	min-width 80px
+	min-height 28px 
+	text-align left 
+	overflow hidden
+	span
+		position absolute
+		opacity 0
+		overflow hidden
+		font-weight 800
+		letter-spacing -2px
+		&:first-child
+			opacity 1
+	.rotate-in
+		animation rotateInWord .5s linear forwards
+		-webkit-animation rotateInWord .5s linear forwards
+	.rotate-out
+		animation rotateOutWord .5s linear forwards
+		-webkit-animation rotateOutWord .5s linear forwards
+@-webkit-keyframes rotateInWord {
+    0% { opacity: 0; -webkit-transform: translateY(-30px); }
+	100% { opacity: 1; -webkit-transform: translateY(0px); }
+}
+@-webkit-keyframes rotateOutWord {
+    0% { opacity: 1; -webkit-transform: translateY(0px); }
+	100% { opacity: 0; -webkit-transform: translateY(30px); }
+}
+@keyframes rotateInWord {
+    0% { opacity: 0; transform: translateY(-30px); }
+	100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes rotateOutWord {
+    0% { opacity: 1; transform: translateY(0px); }
+	100% { opacity: 0; transform: translateY(30px); }
+}
+.workcount
+	background-image url('../images/slider1.jpg')
+	background-repeat no-repeat
+	background-size cover
+	-webkit-background-size cover
+	-moz-background-size cover
+	-o-background-size cover
+	background-attachment fixed
+	background-position 50% 50%
+	padding-top 20px
+	padding-bottom 30px
+	.workcount-container
+		position relative
+		&:before
+			position absolute
+			content " "
+			left 0
+			right 0
+			margin 0 auto
+			bottom -30px
+			width 0
+			border-left 150px solid transparent
+			border-right 150px solid transparent
+			border-bottom 30px solid #fff
+		.stats
+			padding 2em 0
+			ul
+				padding-left 0
+				list-style none
+				text-align center
+				color #fff
+				text-shadow black 2px 2px 1px
+				font-size 26px				
+				font-weight 300
+				margin 0 auto
+				li
+					display inline-block
+					padding 26px					
+					width 160px
+					.icono
+						font-size 40px
+					span
+						display block
+@media (min-width: 768px)
+	.workcount
+		.workcount-container
+			&:before
+				border-left-width 300px
+				border-right-width 300px
+			.stats
+				ul
+					li
+						margin auto 40px
+.skills
+	padding-bottom 50px
+	.skill-container
+		position relative
+		&:before
+			position absolute
+			content ""
+			left 0
+			right 0
+			margin 0 auto
+			bottom -80px
+			width 0
+			border-left 150px solid transparent
+			border-right 150px solid transparent
+			border-top 30px solid #fff
+			z-index 55
+		p
+			font-size 24px
+			text-align center
+		.skill-box
+			display block
+			h4
+				margin 0
+				line-height 24px
+				font-size 16px
+			.skill
+				display block
+				text-align left
+				height 6px
+				color #000
+				line-height 15px
+				border-radius 4px
+				transition all 5s
+				margin-bottom 10px
+				.progress-bar
+					border-radius 4px
+					transition all 5s
+@media (min-width: 768px)
+	.skills
+		.skill-container
+			&:before
+				border-left-width 300px
+				border-right-width 300px
+.whatido
+	background-image url('../images/bg-3.jpg')
+	background-repeat no-repeat
+	background-size cover
+	-webkit-background-size cover
+	-moz-background-size cover
+	-o-background-size cover
+	background-attachment fixed
+	background-position 50% 50%
+	.bgcolorw
+		width 100%
+		background rgba(0,0,0, 0.7)
+		text-shadow #000 2px 2px 2px
+		.whatido-container
+			position relative
+			&:before
+				position absolute
+				content ""
+				left 0
+				right 0
+				margin 0 auto
+				bottom -0px
+				width 0
+				border-left 150px solid transparent
+				border-right 150px solid transparent
+				border-bottom 30px solid #fff
+			.row
+				padding 20px 0 40px
+			h2
+				text-shadow #fff 0px 0.5px 0.5px
+			p
+				font-size 24px
+				color #fff
+				text-align center				
+			.offer
+				display block
+				margin 25px auto
+				text-align center
+				h3
+				h4
+					margin 0
+					text-shadow #000 2px 2px 2px
+				h3
+					color #fff !important
+					font-family Raleway
+					font-weight 300
+					letter-spacing -1px
+				h4
+					line-height 20px
+					font-size 15px
+				span
+					display block
+					font-size 45px
+			.frontend
+				color: #bfe8f9; /* Old browsers */
+				color: -moz-linear-gradient(-45deg,  #bfe8f9 17%, #9fd8ef 73%, #e4f5fc 100%, #2ab0ed 100%, #e4f5fc 100%); /* FF3.6+ */
+				color: -webkit-gradient(linear, left top, right bottom, color-stop(17%,#bfe8f9), color-stop(73%,#9fd8ef), color-stop(100%,#e4f5fc), color-stop(100%,#2ab0ed), color-stop(100%,#e4f5fc)); /* Chrome,Safari4+ */
+				color: -webkit-linear-gradient(-45deg,  #bfe8f9 17%,#9fd8ef 73%,#e4f5fc 100%,#2ab0ed 100%,#e4f5fc 100%); /* Chrome10+,Safari5.1+ */
+				color: -o-linear-gradient(-45deg,  #bfe8f9 17%,#9fd8ef 73%,#e4f5fc 100%,#2ab0ed 100%,#e4f5fc 100%); /* Opera 11.10+ */
+				color: -ms-linear-gradient(-45deg,  #bfe8f9 17%,#9fd8ef 73%,#e4f5fc 100%,#2ab0ed 100%,#e4f5fc 100%); /* IE10+ */
+				color: linear-gradient(135deg,  #bfe8f9 17%,#9fd8ef 73%,#e4f5fc 100%,#2ab0ed 100%,#e4f5fc 100%); /* W3C */
+			.webdesign
+				color: #f6e6b4; /* Old browsers */										
+				color: -moz-linear-gradient(-45deg,  #f6e6b4 1%, #ed9017 100%); /* FF3.6+ */
+				color: -webkit-gradient(linear, left top, right bottom, color-stop(1%,#f6e6b4), color-stop(100%,#ed9017)); /* Chrome,Safari4+ */
+				color: -webkit-linear-gradient(-45deg,  #f6e6b4 1%,#ed9017 100%); /* Chrome10+,Safari5.1+ */
+				color: -o-linear-gradient(-45deg,  #f6e6b4 1%,#ed9017 100%); /* Opera 11.10+ */
+				color: -ms-linear-gradient(-45deg,  #f6e6b4 1%,#ed9017 100%); /* IE10+ */
+				color: linear-gradient(135deg,  #f6e6b4 1%,#ed9017 100%); /* W3C */
+			.rdesign
+				color: #e6f0a3; /* Old browsers */										
+				color: -moz-linear-gradient(45deg,  #e6f0a3 0%, #d2e638 50%, #c3d825 51%, #dbf043 100%); /* FF3.6+ */
+				color: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#e6f0a3), color-stop(50%,#d2e638), color-stop(51%,#c3d825), color-stop(100%,#dbf043)); /* Chrome,Safari4+ */
+				color: -webkit-linear-gradient(45deg,  #e6f0a3 0%,#d2e638 50%,#c3d825 51%,#dbf043 100%); /* Chrome10+,Safari5.1+ */
+				color: -o-linear-gradient(45deg,  #e6f0a3 0%,#d2e638 50%,#c3d825 51%,#dbf043 100%); /* Opera 11.10+ */
+				color: -ms-linear-gradient(45deg,  #e6f0a3 0%,#d2e638 50%,#c3d825 51%,#dbf043 100%); /* IE10+ */
+				color: linear-gradient(45deg,  #e6f0a3 0%,#d2e638 50%,#c3d825 51%,#dbf043 100%); /* W3C */
+			.uxdesign
+				color: #f3c5bd; /* Old browsers */					
+				color: -moz-linear-gradient(45deg,  #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%); /* FF3.6+ */
+				color: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#f3c5bd), color-stop(50%,#e86c57), color-stop(51%,#ea2803), color-stop(75%,#ff6600), color-stop(100%,#c72200)); /* Chrome,Safari4+ */
+				color: -webkit-linear-gradient(45deg,  #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* Chrome10+,Safari5.1+ */
+				color: -o-linear-gradient(45deg,  #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* Opera 11.10+ */
+				color: -ms-linear-gradient(45deg,  #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* IE10+ */
+				color: linear-gradient(45deg,  #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* W3C */
+			.backend
+				color: #b4ddb4; /* Old browsers */										
+				color: -moz-linear-gradient(45deg,  #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* FF3.6+ */
+				color: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#b4ddb4), color-stop(17%,#83c783), color-stop(33%,#52b152), color-stop(67%,#008a00), color-stop(83%,#005700), color-stop(100%,#002400)); /* Chrome,Safari4+ */
+				color: -webkit-linear-gradient(45deg,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Chrome10+,Safari5.1+ */
+				color: -o-linear-gradient(45deg,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Opera 11.10+ */
+				color: -ms-linear-gradient(45deg,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* IE10+ */
+				color: linear-gradient(45deg,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C */
+@media (min-width: 768px)
+	.whatido
+		.bgcolorw
+			.whatido-container
+				&:before
+					border-left-width 300px
+					border-right-width 300px
+.howiwork
+	padding-top 20px
+	padding-bottom 20px
+	.howiwork-container
+		position relative
+		&:before
+			position absolute
+			content ""
+			left 0
+			right 0
+			margin 0 auto
+			bottom -50px
+			width 0
+			border-left 150px solid transparent
+			border-right 150px solid transparent
+			border-top 30px solid #fff
+		ul
+			padding-left 0
+			list-style none
+			text-align center	
+			.box-process
+				position relative
+				display inline-block
+				margin 10px 10px
+				&:last-child
+					&:before
+						display none
+				&:before
+					position absolute
+					font-family Flaticon
+					content "\e00d"					
+					font-size 30px
+					top 50%
+					margin-top -17px
+					right -25px
+				.process
+					display block
+					margin auto
+					text-align center
+					border-radius 50%
+					height 120px
+					width 120px
+					padding 20px 10px
+					border 4px solid verde-azulado2
+					color verde-azulado2
+					&:hover
+						border 4px solid transparent
+						box-shadow 1px 1px 20px gray
+					span
+						font-size 32px
+						margin 0
+						padding 0
+					h4
+						margin 0
+						padding 0
+@media (min-width: 768px)
+	.howiwork
+		.howiwork-container
+			&:before
+				border-left-width 300px
+				border-right-width 300px
+@media (max-width: 283px)
+	.howiwork
+		ul
+			li 
+				&:before
+					display none
+@media (min-width: 284px) and (max-width: 363px)
+	.howiwork
+		ul
+			li
+				&:nth-child(2n+2)
+					&:before
+						display none
+@media (min-width: 364px) and (max-width: 684px) 
+	.howiwork
+		ul
+			li
+				width 40%
+				&:nth-child(2n+2)
+					&:before
+						display none
+@media (min-width: 685px) and (max-width: 768px) 
+	.howiwork
+		ul
+			li
+				width 40%
+				&:nth-child(2n+2)
+					&:before
+						display none
+@media (min-width: 768px) and (max-width: 991px) 
+	.howiwork
+		ul
+			li
+				width 30%
+				&:nth-child(3)
+					&:before
+						display none
+@media (min-width: 992px) and (max-width: 1199px) 
+	.howiwork
+		ul
+			li
+				width 30%
+				&:nth-child(3)
+					&:before
+						display none
+@media (min-width: 1200px)
+	.howiwork
+		ul
+			li
+				width 12%
+.zoneclients
+	background gris_fondo
+	padding-top 20px
+	padding-bottom 50px
+	.zoneclients-container
+		position relative
+		&:before
+			position absolute
+			content ""
+			left 0
+			right 0
+			margin 0 auto
+			bottom -80px
+			width 0
+			border-left 150px solid transparent
+			border-right 150px solid transparent
+			border-top 30px solid gris_fondo
+		p
+			font-size 24px
+			text-align center
+			margin 0 auto 20px
+		.cliente
+			margin 0.2em
+			text-align center 
+			img
+				max-width 90%
+				max-height 64px
+				opacity 0.4
+				transition all 0.5s
+				&:hover
+					opacity 1
+@media (min-width: 768px)
+	.zoneclients
+		.zoneclients-container
+			&:before
+				border-left-width 300px
+				border-right-width 300px
+.zoneportfolio
+	background #fff
+	padding-top 20px
+	padding-bottom 50px
+	.zoneportfolio-container
+		position relative
+		&:before
+			position absolute
+			content ""
+			left 0
+			right 0
+			margin 0 auto
+			bottom -80px
+			width 0
+			border-left 150px solid transparent
+			border-right 150px solid transparent
+			border-top 30px solid #fff
+		p
+			font-size 24px
+			text-align center
+			margin 0 auto 20px
+		.controls
+			display block
+			margin auto
+			text-align center
+			margin-bottom 30px
+			button
+				background #fff
+				border 2px solid transparent
+				transition all 0.8s
+				&:hover
+					border-bottom 2px solid azul-fb
+		.containermix
+			.div-box
+				text-align center
+				margin auto auto 30px
+				position relative
+				overflow hidden
+				figure
+					position relative
+					img
+						width 100%
+						height 200px
+					span
+						position absolute
+						opacity 0
+						top 28%
+						left 45%
+						font-size 32px
+						color #fff
+						background-color rgba(0, 153, 102, 0.3)
+					.div-caption-box
+						position absolute
+						top 45%
+						width 100%
+						background-color rgba(0, 0, 0, 0.4)
+						color #fff
+						text-shadow 1px 1px 1px #000
+						transition all 0.6s
+						h4
+							text-align center
+							margin 5px auto
+						.spacer
+							width 50px
+							height 2px
+							margin 0 auto
+							background #fff
+					&:hover
+						.div-caption-box
+							top 0
+							height 200px
+							background-color rgba(106, 215, 237, 0.4)
+							h4
+								line-height 200px
+						span
+							opacity 1
+@media (min-width: 768px)
+	.zoneportfolio
+		.zoneportfolio-container
+			&:before
+				border-left-width 300px
+				border-right-width 300px
+		
+.contact
+	padding-bottom 30px
+	background-image url('../images/header-bg-3.jpg')
+	background-repeat no-repeat
+	background-size cover
+	-webkit-background-size cover
+	-moz-background-size cover
+	-o-background-size cover
+	background-attachment fixed
+	background-position 50% 50%
+	.mac
+		img
+			display none
+		.mac-content
+			padding-top 1em
+			h5
+				display none
+			.col-sm-6
+				margin-top 0.5em
+			textarea
+				margin-top 0.5em
+				resize none
+			.btndv
+				float right
+				.btn
+					border none
+					font-family inherit
+					font-size inherit
+					color inherit				
+					cursor pointer
+					padding 15px 50px
+					display inline-block
+					margin 15px 0px
+					text-transform uppercase
+					letter-spacing 1px
+					font-weight 700
+					outline none
+					position relative
+					-webkit-transition all 0.3s
+					-moz-transition all 0.3s
+					-ms-transition all 0.3s
+					-o-transition all 0.3s
+					transition all 0.3s
+					&:after
+						content ""
+						position absolute
+						z-index -1
+						-webkit-transition all 0.3s
+						-moz-transition all 0.3s
+						transition all 0.3s
+					&:before
+						speak none
+						font-style normal
+						font-weight normal
+						font-variant normal
+						text-transform none
+						line-height 32px
+						position relative
+						-webkit-font-smoothing antialiased
+				.btn-3
+					background #fcad26
+					color #fff
+					&:hover
+						background #f29e0d
+					&:active
+						background #f58500
+						top 2px
+					&:before
+						position absolute
+						height 100%
+						left 0
+						top 0
+						line-height 2
+						font-size 140%
+						width 60px
+				.btn-3e
+					padding: 5px 70px 5px 30px
+					overflow: hidden
+					&:before
+						left auto
+						right -10px
+						top -6px
+						z-index 2
+					&:after
+						width 30%
+						height 200%
+						background rgba(255,255,255,0.1)
+						z-index 1
+						right 0
+						top 0
+						margin -5px 0 0 -5px
+						-webkit-transform-origin 0 0
+						-webkit-transform rotate(-20deg)
+						-moz-transform-origin 0 0
+						-moz-transform rotate(-20deg)
+						-ms-transform-origin 0 0
+						-ms-transform rotate(-20deg)
+						-o-transform-origin 0 0
+						-o-transform rotate(-20deg)
+						transform-origin 0 0
+						transform rotate(-20deg)
+					&:hover
+						&:after
+							width 40%
+							background rgba(255,255,255,0.1)
+							height 200%
+							background rgba(255,255,255,0.1)
+							z-index 1
+							right 0
+							top 0
+							margin -5px 0 0 -5px
+							-webkit-transform-origin 0 0
+							-webkit-transform rotate(-20deg)
+							-moz-transform-origin 0 0
+							-moz-transform rotate(-20deg)
+							-ms-transform-origin 0 0
+							-ms-transform rotate(-20deg)
+							-o-transform-origin 0 0
+							-o-transform rotate(-20deg)
+							transform-origin 0 0
+							transform rotate(-20deg)
+@media (min-width: 1200px)
+	.contact
+		padding-top 20px
+		.mac
+			position relative
+			width 100%
+			img
+				display block
+				width 100%
+			.mac-content
+				position absolute
+				top 55px
+				left 90px
+				h5
+					display block
+					margin 0
+					color azul3
+					font-size 16px
+.scrollimation.fade-in
+	opacity:0;
+	-webkit-transition:opacity 0.4s ease-out;
+	transition:opacity 0.4s ease-out;
+.scrollimation.fade-in.in
+	opacity:1;
+.scrollimation.scale-in
+	opacity:0;
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform:scale(0.8);
+	-webkit-transition: -webkit-transform .6s cubic-bezier(.17,.89,.67,1.57), opacity .6s ease-out;
+	transition: transform .6s cubic-bezier(.17,.89,.67,1.57), opacity .6s ease-out;
+.scrollimation.scale-in.in
+	opacity:1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform:scale(1);
+.scrollimation.fade-right
+	opacity:0;
+	-webkit-transform: translateX(-30px);
+	-moz-transform: translateX(-30px);
+	-ms-transform: translateX(-30px);
+	transform:translateX(-30px);
+	-webkit-transition: -webkit-transform .6s ease-in,opacity .8s ease-in;
+	transition: transform .6s ease-in,opacity .8s ease-in;
+.scrollimation.fade-right.in
+	opacity:1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	transform:translateX(0px);
+.scrollimation.fade-left
+	opacity:0;
+	-webkit-transform: translateX(30px);
+	-moz-transform: translateX(30px);
+	-ms-transform: translateX(30px);
+	transform:translateX(30px);
+	-webkit-transition: -webkit-transform .6s ease-in,opacity .8s ease-in;
+	transition: transform .6s ease-in,opacity .8s ease-in;
+.scrollimation.fade-left.in
+	opacity:1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	transform:translateX(0px);
+.scrollimation.fade-up
+	opacity:0;
+	-webkit-transform: translateY(30px);
+	-moz-transform: translateY(30px);
+	-ms-transform: translateY(30px);
+	transform:translateY(30px);
+	-webkit-transition: -webkit-transform .6s ease-in,opacity .8s ease-in;
+	transition: transform .5s ease-in,opacity .8s ease-in;
+.scrollimation.fade-up.in
+	opacity:1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform:translateY(0px);
+.touch .scrollimation.fade-in
+	opacity:1;
+.touch .scrollimation.scale-in
+	opacity:1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform:scale(1);
+.touch .scrollimation.fade-right
+	opacity:1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	transform:translateX(0px);
+.touch .scrollimation.fade-left
+	opacity:1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	transform:translateX(0px);
+.touch .scrollimation.fade-up
+	opacity:1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform:translateY(0px);
+/*  MARKETPLACE */
+.pantallamkp
+	background-image url('../images/image.jpg')
+	background-repeat no-repeat
+	background-size cover
+	-webkit-background-size cover
+	-moz-background-size cover
+	-o-background-size cover
+	background-attachment fixed
+	background-position 20% 50%
+	color azul-claro
+	min-height 500px
+	padding 0 !important
+	margin-bottom 0
+	position relative
+	.message-box-mkp
+		.text-box
+			background rgba(0,0,0, 0.4)
+			width 100%
+			display inline-block
+			font-family Raleway
+			text-shadow #000 2px 2px 2px
+			text-align center
+			.iam
+				padding 10px 0 0 0				
+				margin 0
+				color #74c7d5
+				p
+					margin 0
+					font-weight 300
+					font-size 60px
+					color rojo2
+					line-height 60px
+					letter-spacing -2px
+				span
+					font-weight 300
+					font-size 20px
+					color rojo2
+	.down
+		position absolute
+		bottom 13px
+		left 50%
+		width 50px
+		text-align center
+		font-size 55px
+		color azul2
+		padding 0
+		margin 0 -25px
+@media (min-width: 768px)
+	.pantallamkp
+		.message-box-mkp
+			.text-box				
+				text-shadow #000 2px 2px 3px
+				.iam
+					p
+						font-size 100px
+						line-height 100px
+						letter-spacing 1px
+					span
+						font-size 30px
+@media (min-width: 1200px)
+	.pantallamkp
+		.message-box-mkp
+			.text-box				
+				text-shadow #000 2px 2px 3px
+				.iam
+					p
+						font-size 150px
+						line-height 150px
+						letter-spacing 1px
+					span
+						font-size 40px
+.zone-head
+	background #fff
+	padding-top 20px
+	padding-bottom 50px
+	.zone-title
+		.zonetitle-container
+			position relative
+			h2
+				margin 0
+				padding 0
+			&:after
+				position absolute
+				content ""
+				left 0
+				right 0
+				margin 0 auto
+				top -50px
+				width 0
+				border-left 150px solid transparent
+				border-right 150px solid transparent
+				border-bottom 30px solid #fff
+	.menu-sections
+		height 100px
+		line-height 100px
+		text-align center
+		margin-bottom 20px
+		.row-sections
+			border 2px solid azul-fb
+			border-radius 5px
+			color azul-fb
+			font-size 20px
+			.col-store
+			.col-repository
+				padding 0
+				transition all 0.5s
+				a
+					display block
+					&:active
+					&:hover
+						transition all 0.5s
+						background azul-fb
+						color #fff
+			.col-store
+				position relative
+				background #fff
+				.title-store
+					position relative
+					&:before
+						position absolute
+						content ""
+						right -30px
+						top 0
+						border-left 30px solid azul-fb
+						border-top 100px solid transparent
+					&:after
+						position absolute
+						content ""
+						right -24px
+						top 0
+						border-left 25px solid #fff
+						border-top 100px solid transparent
+						z-index 44
+					&:active
+					&:hover
+						&:after
+							transition all 0.5s
+							border-left-color azul-fb
+				.acti-diag
+					position relative
+					&:after
+						position absolute
+						content ""
+						right -24px
+						top 0
+						border-left 25px solid azul-fb
+						border-top 100px solid transparent
+.title-active
+	transition all 0.5s
+	background azul-fb
+	color #fff
+.zone-store
+	padding-bottom 50px
+	.zone-store-container
+		position relative
+		&:before
+			position absolute
+			content ""
+			left 0
+			right 0
+			margin 0 auto
+			bottom -80px
+			width 0
+			border-left 150px solid transparent
+			border-right 150px solid transparent
+			border-top 30px solid #fff
+		.product
+			.box-product
+				height 300px
+				border 1px solid transparent
+				transition all 0.3s
+				box-shadow 1px 1px 70px gray
+				position relative
+				z-index 44				
+				.card-img
+					height 300px
+					border-bottom 1px solid gray
+					img
+						width 100%
+						height 300px
+					&:before
+						position absolute
+						content ""
+						border 40px solid dorado_oscuro
+						border-left-color transparent
+						border-bottom-color transparent
+						top -10px
+						right -10px
+						z-index 12
+					&:after
+						position absolute
+						content ""
+						border 40px solid dorado_oscuro
+						border-right-color transparent
+						border-top-color transparent
+						bottom -10px
+						left -10px
+						z-index 12
+				&:before
+					position absolute
+					content ""
+					width 100%
+					height 100%
+					top 0
+					right 0
+					transition all 0.5s
+					background rgba(0, 0,0, 0.7)
+				&:hover
+					&:before
+						background rgba(0, 0,0, 0)
+			.description
+				h3
+					font-size 24px
+				h5
+					span
+						font-weight bold
+				a
+					display block
+					line-height 35px
+					padding-left 15px
+					width 120px
+					height 35px
+@media (min-width: 768px)
+	.zone-store
+		.zone-store-container
+			&:before
+				border-left-width 300px
+				border-right-width 300px
+			.box-mkp
+				border 1px solid gris_texto
+				box-shadow none
+				&:hover
+					border-color transparent
+					box-shadow 1px 1px 70px gray
+.zone-repository
+	display none
+	padding-bottom 50px
+	.zone-repo-container
+		position relative
+		&:before
+			position absolute
+			content ""
+			left 0
+			right 0
+			margin 0 auto
+			bottom -80px
+			width 0
+			border-left 150px solid transparent
+			border-right 150px solid transparent
+			border-top 30px solid #fff
+		.commit
+			.table
+				tbody
+					tr
+						td
+							a
+								display block
+								text-align center
+								width 100px
+								border 2px solid verde-azulado2
+								color verde-azulado2
+								&:hover
+								&:active
+									background verde-azulado2
+									border-color transparent
+									color #fff
+@media (min-width: 768px)
+	.zone-repository
+		.zone-repo-container
+			&:before
+				border-left-width 300px
+				border-right-width 300px

@@ -1,0 +1,210 @@
+azul = #22BCE0
+naranja = #DD4F24
+gris_texto= #7A7A7A
+gris_oscuro = #444
+
+a
+	color naranja
+body
+	background #E8E8E8
+	color gris_oscuro
+	font-family Arial
+	font-size 16px
+footer
+	background naranja
+	color rgba(white,0.5)
+	text-align center
+	padding 0.5em 0
+	bottom 0
+	width 100%
+	h3
+		font-size 14px
+		font-weight normal
+		strong
+			display block
+		.mejor
+			&:before
+			&:after
+				content " - "
+
+header
+	overflow hidden
+	background gris_oscuro
+	color white
+	padding 0.5em	
+	position relative
+	box-shadow 0 5px 0 rgba(0,0,0,0.2)
+	z-index 1
+	.logo
+		background yellow
+		float left
+		border-right 1px solid azul
+		width 60px
+		img
+			width 52px
+	.titular
+		background green
+		margin 0 80px 0 70px
+		.filtro
+			color azul
+			text-decoration none
+			font-size 14px
+			font-weight bold
+			font-style italic
+
+		.publicar
+			color white
+			font-style italic
+			background naranja
+			text-decoration none
+			float right
+			padding 0.2em 0.5em
+			text-shadow 1px 1px 1px black
+			margin -3px 1em 0 0
+
+		.titulo
+			background gray
+			font-size 18px
+			font-weight normal
+			margin 0
+			padding 0
+	.usuario
+		background maroon
+		position absolute
+		top 10px
+		right 10px
+		.avatar
+			margin 0 1em 0 0
+			position relative
+			z-index 2
+			img
+				width 50px
+				border-radius 50%
+		.flechita
+			background naranja
+			color white
+			display block
+			position absolute
+			width 50%
+			text-align right
+			top 15px
+			right 0
+			padding 3px
+nav
+	background azul
+	border-left 15px solid white
+	position relative
+	&:before
+		position absolute
+		border-bottom 20px solid green
+		border-top 20px solid green
+		border-left 7px solid red
+		content ""
+		top 0
+		left 0
+	.menu
+		padding 0
+		height 40px 
+		margin 0
+		overflow-x auto
+		line-height 40px
+		white-space nowrap
+
+
+		li
+			display inline-block
+			a
+				margin 0 0.5em 
+				padding 0 0.2em
+				display block
+				color white
+				text-decoration none
+.posts
+	padding 0.5em
+	background yellow
+	.post
+		background white
+		color gris_texto
+		box-shadow 2px 2px 10px rgba(black)
+		border-radius 0 0 0.5em 0.5em
+		.acciones
+			background brown
+			border-top 3px solid azul
+			padding 0.5em
+			overflow hidden
+			.datos
+				background green
+				float right
+				.comentarios
+					background gris_texto
+					color white
+					padding 2px 5px
+					margin 0 1em 0 0
+					text-decoration none
+					border-radius 3px
+			.votos
+				float left
+				background red
+				.down
+				.up
+					text-decoration none
+				.down
+					color red
+				.up
+					color green
+
+		.descripcion
+			color gris_texto
+			background lime
+			height 160px
+			.detalles
+				height 160px
+				background pink
+				margin-left 130px
+				.autor
+					background ivory
+					margin 0.5em 0 2em 0
+				.fecha
+					background navy
+					float right
+					margin 0 1em 0 0
+				.tag
+					background azul
+					color white
+					text-decoration none
+					padding 0.2em 0.5em
+					border-radius 0.5em
+				.titulo
+					font-size 18px
+					font-style italic
+					color gris_oscuro
+					background gray
+					margin 0
+					padding 0.5em 0.5em 0 0
+			.imagen
+				float left
+				background green
+				img
+					vertical-align top
+					width 120px
+					height 160px
+					vertical-align top
+@media screen and (min-width: 768px)
+	header
+		.titular
+			.publicar
+				font-size 1.1em
+				padding-left 3em
+				position relative
+				&:before
+					font-size 2.5em
+					position absolute
+					left 0
+					top -10px
+	.posts
+		.post
+			width 48%
+			display inline-block
+			vertical-align top
+			&:nth-child(odd)
+				margin-right 2%
