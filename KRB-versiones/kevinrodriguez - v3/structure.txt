@@ -1,0 +1,60 @@
+HEADER
+	DIV.container
+		DIV.row
+
+SECTION.container-slide
+
+SECTION.container.section-about
+	ARTICLE.about
+		DIV.row
+			DIV.sol-sm-6.about-me
+				H2
+				H3
+				P
+			DIV.col-sm-6.about-img
+				IMG
+DIV.container
+	SECTION.section-about-2.ss~~
+		ARTICLE.about-2
+			DIV.row
+				DIV.col-sm-6.col-design
+					H3
+					UL
+				DIV.col-sm-6.col-coder
+					H3
+					UL
+			DIV.row.graphics
+				DIV.col-sm-5.chartGral
+					DIV#grafico
+				DIV.col-sm-5.chartEsp
+					DIV#grafico
+	SECTION.section-moreofme.ss~~
+		ARTICLE.moreofme
+			DIV.row
+				DIV.col-sm-6
+					H2
+					UL
+				DIV.col-sm-6
+					IMG
+FOOTER#contact
+	DIV.container
+		DIV.ROW
+			DIV.sol-sm-12.title
+				H2
+				H3
+		DIV.row
+			DIV.col-sm-6.message
+				P
+				UL
+			DIV.col-sm-6.contactform
+				FORM
+					DIV.row
+						DIV.col-sm-6
+						DIV.col-sm-6
+					DIV.row
+						DIV.col-xs-12
+					DIV.row
+						DIV.col-xs-12
+		DIV.row.copy
+			DIV.col-sm-12
+				H5

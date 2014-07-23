@@ -1,0 +1,1189 @@
+azul = #22BCE0
+naranja = #DD4F24
+gris_texto= #7A7A7A
+gris_oscuro = #444
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-kwg7kr');
+	src:url('../fonts/icomoon.eot?#iefix-kwg7kr') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-kwg7kr') format('woff'),
+		url('../fonts/icomoon.ttf?-kwg7kr') format('truetype'),
+		url('../fonts/icomoon.svg?-kwg7kr#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope:before {
+	content: "\e600";
+}
+.icon-facebook:before {
+	content: "\e601";
+}
+.icon-twitter:before {
+	content: "\e602";
+}
+.icon-github:before {
+	content: "\e603";
+}
+.icon-linkedin:before {
+	content: "\e604";
+}
+.icon-arrow-right:before {
+	content: "\e605";
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?13745629');
+  src: url('../fonts/fontello.eot?13745629#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff?13745629') format('woff'),
+       url('../fonts/fontello.ttf?13745629') format('truetype'),
+       url('../fonts/fontello.svg?13745629#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?13745629#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="iconf-"]:before, [class*=" iconf-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.iconf-users-1:before { content: '\e820'; } /* '' */
+.iconf-mail:before { content: '\e815'; } /* '' */
+.iconf-cog:before { content: '\e801'; } /* '' */
+.iconf-cog-alt:before { content: '\e822'; } /* '' */
+.iconf-lightbulb:before { content: '\e802'; } /* '' */
+.iconf-down-open:before { content: '\e806'; } /* '' */
+.iconf-left-open:before { content: '\e803'; } /* '' */
+.iconf-right-open:before { content: '\e804'; } /* '' */
+.iconf-up-open:before { content: '\e805'; } /* '' */
+.iconf-angle-double-left:before { content: '\e807'; } /* '' */
+.iconf-angle-double-right:before { content: '\e808'; } /* '' */
+.iconf-angle-double-up:before { content: '\e80a'; } /* '' */
+.iconf-angle-double-down:before { content: '\e809'; } /* '' */
+.iconf-megaphone:before { content: '\e80d'; } /* '' */
+.iconf-rocket:before { content: '\e80b'; } /* '' */
+.iconf-bug:before { content: '\e80c'; } /* '' */
+.iconf-magic:before { content: '\e80e'; } /* '' */
+.iconf-code:before { content: '\e800'; } /* '' */
+.iconf-html5:before { content: '\e819'; } /* '' */
+.iconf-user-1:before { content: '\e81b'; } /* '' */
+.iconf-brush:before { content: '\e811'; } /* '' */
+.iconf-chart-line:before { content: '\e810'; } /* '' */
+.iconf-megaphone-1:before { content: '\e81a'; } /* '' */
+.iconf-users:before { content: '\e81e'; } /* '' */
+.iconf-user:before { content: '\e812'; } /* '' */
+.iconf-quote-left:before { content: '\e817'; } /* '' */
+.iconf-quote-right:before { content: '\e818'; } /* '' */
+.iconf-layers-alt:before { content: '\e813'; } /* '' */
+.iconf-easel:before { content: '\e821'; } /* '' */
+.iconf-mail-1:before { content: '\e816'; } /* '' */
+.iconf-user-2:before { content: '\e81c'; } /* '' */
+.iconf-html5-1:before { content: '\e81f'; } /* '' */
+.iconf-guest:before { content: '\e81d'; } /* '' */
+.iconf-child:before { content: '\e814'; } /* '' */
+.iconf-puzzle:before { content: '\e80f'; } /* '' */
+
+
+@font-face {
+  font-family: 'fontello2';
+  src: url('../fonts/fontello2.eot?4180107');
+  src: url('../fonts/fontello2.eot?4180107#iefix') format('embedded-opentype'),
+       url('../fonts/fontello2.woff?4180107') format('woff'),
+       url('../fonts/fontello2.ttf?4180107') format('truetype'),
+       url('../fonts/fontello2.svg?4180107#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?4180107#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="iconf2-"]:before, [class*=" iconf2-"]:before {
+  font-family: "fontello2";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.iconf2-spin4:before { content: '\e80e'; } /* '' */
+.iconf2-folder-1:before { content: '\e81b'; } /* '' */
+.iconf2-picture:before { content: '\e818'; } /* '' */
+.iconf2-link-1:before { content: '\e812'; } /* '' */
+.iconf2-download:before { content: '\e800'; } /* '' */
+.iconf2-chat-2:before { content: '\e814'; } /* '' */
+.iconf2-chat-empty:before { content: '\e813'; } /* '' */
+.iconf2-doc-text-inv:before { content: '\e801'; } /* '' */
+.iconf2-credit-card:before { content: '\e811'; } /* '' */
+.iconf2-beaker:before { content: '\e802'; } /* '' */
+.iconf2-video:before { content: '\e817'; } /* '' */
+.iconf2-camera:before { content: '\e816'; } /* '' */
+.iconf2-download-1:before { content: '\e803'; } /* '' */
+.iconf2-print:before { content: '\e804'; } /* '' */
+.iconf2-spin5:before { content: '\e80f'; } /* '' */
+.iconf2-folder:before { content: '\e819'; } /* '' */
+.iconf2-left-open-big:before { content: '\e815'; } /* '' */
+.iconf2-right-open-big:before { content: '\e81c'; } /* '' */
+.iconf2-leaf-1:before { content: '\e81a'; } /* '' */
+.iconf2-graduation-cap:before { content: '\e806'; } /* '' */
+.iconf2-traffic-cone:before { content: '\e810'; } /* '' */
+.iconf2-hash:before { content: '\e807'; } /* '' */
+.iconf2-bullhorn:before { content: '\e808'; } /* '' */
+.iconf2-link:before { content: '\e809'; } /* '' */
+.iconf2-download-2:before { content: '\e80a'; } /* '' */
+.iconf2-chat-1:before { content: '\e80b'; } /* '' */
+.iconf2-jabber:before { content: '\e80c'; } /* '' */
+.iconf2-download-alt:before { content: '\e80d'; } /* '' */
+.iconf2-chat:before { content: '\e805'; } /* '' */
+
+a
+	text-decoration none !important
+body
+	background #E8E8E8
+	color gris_oscuro
+	font-family 'Oxygen', sans-serif
+	font-size 16px
+	
+footer
+	margin-top 3em
+	border-top 3px black solid
+	padding 2em 0 1em 0
+	bottom 0
+
+	h2
+		color black
+		padding 0
+		margin 0
+	h3
+		color #22bce0
+		padding 0
+		margin 0
+
+	.message
+		margin-top 1em
+		color black
+		text-align justify
+		ul
+			list-style none
+			padding-left 20%
+			padding-right 15%
+			li
+				display inline-block
+				a
+					padding 0 1em 0 1em
+					color black
+					text-decoration none
+					font-size 24px
+					&:hover					
+						.icon-facebook
+							color #45619D
+						.icon-linkedin
+							color #0073B2
+						.icon-twitter						
+							color #22bce0
+
+	.contactform
+		padding-top 1em
+		.col-sm-6
+			margin-top 0.5em
+		textarea
+			margin-top 0.5em
+			resize none
+
+
+		.btndv
+			float right
+			.btn
+				border: none;
+				font-family: inherit;
+				font-size: inherit;
+				color: inherit;				
+				cursor: pointer;
+				padding: 15px 50px;
+				display: inline-block;
+				margin: 15px 0px
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				font-weight: 700;
+				outline: none;
+				position: relative;
+				-webkit-transition: all 0.3s;
+				-moz-transition: all 0.3s;
+				-ms-transition: all 0.3s;
+				-o-transition: all 0.3s;
+				transition: all 0.3s;
+				&:after
+					content ""
+					position absolute
+					z-index -1
+					-webkit-transition all 0.3s
+					-moz-transition all 0.3s
+					transition all 0.3s
+				&:before
+					font-family: 'icomoon';
+					speak: none;
+					font-style: normal;
+					font-weight: normal;
+					font-variant: normal;
+					text-transform: none;
+					line-height: 1;
+					position: relative;
+					-webkit-font-smoothing: antialiased;
+			.btn-3
+				background: #fcad26;
+				color: #fff;
+				&:hover
+					background: #f29e0d;
+				&:active
+					background: #f58500;
+					top: 2px;
+				&:before
+					position: absolute;
+					height: 100%;
+					left: 0;
+					top: 0;
+					line-height: 3;
+					font-size: 140%;
+					width: 60px;
+			.btn-3e
+				padding: 15px 90px 15px 50px;
+				overflow: hidden;
+				&:before
+					left: auto;
+					right: 10px;
+					top -8px
+					z-index: 2;
+				&:after
+					width: 30%;
+					height: 200%;
+					background: rgba(255,255,255,0.1);
+					z-index: 1;
+					right: 0;
+					top: 0;
+					margin: -5px 0 0 -5px;
+					-webkit-transform-origin: 0 0;
+					-webkit-transform: rotate(-20deg);
+					-moz-transform-origin: 0 0;
+					-moz-transform: rotate(-20deg);
+					-ms-transform-origin: 0 0;
+					-ms-transform: rotate(-20deg);
+					-o-transform-origin: 0 0;
+					-o-transform: rotate(-20deg);
+					transform-origin: 0 0;
+					transform: rotate(-20deg);
+				&:hover
+					&:after
+						width 40%
+						background: rgba(255,255,255,0.1);
+						height: 200%;
+						background: rgba(255,255,255,0.1);
+						z-index: 1;
+						right: 0;
+						top: 0;
+						margin: -5px 0 0 -5px;
+						-webkit-transform-origin: 0 0;
+						-webkit-transform: rotate(-20deg);
+						-moz-transform-origin: 0 0;
+						-moz-transform: rotate(-20deg);
+						-ms-transform-origin: 0 0;
+						-ms-transform: rotate(-20deg);
+						-o-transform-origin: 0 0;
+						-o-transform: rotate(-20deg);
+						transform-origin: 0 0;
+						transform: rotate(-20deg);
+	.copy
+		margin-bottom 0
+
+header
+	background azul22222 
+	overflow hidden
+	.cont-social
+		background red222
+		float right
+		.social
+			display inline-block
+			list-style none
+			padding-left 0
+			margin 0
+			li
+				padding-bottom 0
+				display inline-block
+				a
+					padding 0 0.5em 0 0.5em
+					font-size 2em
+					text-decoration none
+					color black
+
+.container-head
+	overflow hidden
+	height 400px
+	margin-top 0
+	z-index -1
+	.ar-head
+		position relative
+		height 100%
+		.caption-img
+			position absolute			
+			left 32%
+			bottom 8.5em			
+			img
+				width 190px
+				border-radius 50%
+				-webkit-filter: grayscale(100%);
+				box-shadow 2px 2px 5px black
+		.caption-center
+			position absolute
+			bottom 0
+			right 8%
+			left 8% 
+			margin-top 0
+			h3
+				color black
+				font-size 42px
+				font-weight bold
+				text-shadow gray 1px 1px 10px
+				font-family 'Oxygen', sans-serif
+				text-align center
+				letter-spacing -1px
+				padding-bottom 0
+				margin 0
+				&:after
+					content "Hi, I'M KEVIN"
+			.subtitle
+					color #c79f42
+					font-size 25px
+					padding-top 0
+					margin-top 0
+					text-shadow black 2px 2px 1px
+					font-family 'Roboto', sans-serif
+					text-align center
+					&:after
+						content "UX DESIGNER & FRONT-END DEVELOPER"
+						letter-spacing 5px
+
+		.caption-coder
+			position absolute
+			top 10px
+			right 0px
+			background azul
+			padding-bottom 0.5em
+			padding-right 0.3em
+			&:before
+				border-bottom 26px solid transparent
+				border-right 20px solid azul
+				border-top 26px solid azul
+				border-left 20px solid transparent
+				content ""
+				position absolute
+				top 0
+				left -40px
+			h3
+				margin 0px
+				color white
+				font-size 40px
+				text-shadow black 3px 2.5px 1px
+				font-family 'Roboto', sans-serif							
+				
+
+		.caption-designer
+			position absolute
+			top 10px
+			background azul
+			margin-left 0
+			padding 0 0.3em 0.5em 0.3em
+			&:after
+				border-bottom 26px solid azul
+				border-left 20px solid azul
+				border-top 26px solid transparent
+				border-right 20px solid transparent
+				content ""
+				position absolute
+				top 0
+				right -40px
+			h3
+				margin 0px
+				color white
+				font-size 40px
+				text-shadow black 3px 2.5px 1px
+				font-family 'Roboto', sans-serif
+								
+.section-about
+	.about
+		color black
+		font-family 'Oxygen', sans-serif
+		.about-me
+			h2
+				font-size 30px
+				letter-spacing -1px
+				span
+					border-right 3px solid black
+					font-size 24px
+			p
+				text-align left
+			h3
+				font-size 20px
+				margin-top 10px
+				color black !important
+			.div-img
+				text-align center
+				margin 0.5em auto 
+				img
+					width 160px
+					border-radius 50%
+					height 140px
+			.div-cv
+				margin 0.5em auto 1em auto
+				.cv-download
+					display inline-block
+					margin 2em auto 1em auto
+					.a-cv 			
+						width 250px
+						padding 20px 45px
+						color #009966
+						font-size 18px
+						font-weight bold
+						border 2px solid gray
+						&:before
+							font-family "fontello2"
+							content "\e803 "
+							margin-right 0.5em
+							font-size 24px
+						&:hover
+							background #009966
+							border none
+							color white
+							border 2px solid #009966
+							transition background 0.2s ease
+							-webkit-transition background 0.2s ease
+							-moz-transition background 0.2s ease
+							-ms-transition background 0.2s ease
+							-o-transition background 0.2s ease
+							transition background 0.2s ease
+			.testimonios
+				margin auto auto 2em auto
+				.comment
+					.testi
+						position relative
+						border-radius 6px
+						margin 10px 15px auto 10px
+						border 3px solid #377789
+						padding 0.5em 0.8em
+						box-shadow 2px 2px 10px gray
+						background white
+						h5
+							color azul
+							font-size 18px
+						&:before
+							position absolute						
+							top 25px
+							right -40px
+							content " "
+							border 20px solid transparent
+							border-left-color #377789
+						&:after
+							position absolute
+							top 30px
+							right -30px
+							content " "
+							border 15px solid transparent
+							border-left-color white
+				.user
+					text-align center
+					width 120px
+					margin 1em auto auto 0
+					img
+						width 90px
+						border-radius 50%
+						box-shadow 2px 2px 5px gray
+					a
+						font-size 14px
+						&:visited
+							color black
+
+		.about-history
+			padding-top 0
+			.timeline
+				position relative 
+				margin-top 0
+				padding 0 0 8px 0
+				h3
+					text-align center
+					position relative
+					margin-bottom 1.5em
+					font-size 30px
+					span
+						margin -12px auto 6px auto
+						position relative
+						top auto
+						left auto
+						display block
+						border-radius 50%
+						border 4px solid azul
+						width 86px
+						line-height 78px
+						text-align center
+						background white
+				.evento
+					position relative
+					margin-bottom 3em
+					background #E8E8E8
+					border 2px solid azul
+					padding 16px
+					margin-top 100px
+					border-radius 6px
+					box-shadow 2px 2px 10px gray
+					&:first-of-type
+						margin-top 116px
+					.date
+						background #fff
+						border-radius 50%
+						position absolute
+						margin-top -15px
+						width 68px
+						text-align center
+						display block
+						border 4px solid azul
+						font-weight 400
+						line-height 58px
+						left 50%
+						top -64px
+						font-weight bold
+						margin-left -32px
+					h4
+						text-align center
+						margin 0
+						padding 0
+					h5
+						text-align center
+					p
+						margin 0.6em 0 0.2em 0
+						display block
+						&:before
+							background azul
+							width 4px
+							top -162px
+							position absolute
+							display block
+							left 50%
+							content " "
+							height 145%
+							z-index -1
+					
+					
+.conta-about2
+	position relative
+	.section-about-2
+		color black
+		.about-2
+			h2
+				font-size 30px
+				letter-spacing -1px
+				span
+					border-right 3px solid black
+					font-size 24px
+			h3
+				span
+					font-size 24px
+					color azul
+			.graphics
+				.skills
+					.skill
+						position relative
+						height 35px
+						margin-bottom 10px
+						h4
+							z-index 45
+							color white
+							position relative
+							font-family Oxygen
+							padding 8px 0 8px 20px
+							margin 0
+						.bar
+							position absolute
+							top 0
+							left 0
+							height 100%
+							display inline-block
+							background #009966
+							vertical-align baseline
+							z-index 1
+							border-radius 6px 
+
+	.section-moreofme
+		color black
+		margin-top 
+		.moreofme
+			h2
+				font-size 30px
+				letter-spacing -1px
+				span
+					border-right 3px solid black
+					font-size 24px
+					
+			.mkt
+			.asesoria
+			.capacitacion
+			.desarrollo				
+				margin 0.5em 0.5em 0.5em
+				height 70px
+				box-shadow 2px 2px 1px gray
+				position relative
+				&:hover
+					&:after
+						position absolute
+						font-family fontello
+						content "\e809"
+						top 18px
+						right 10px
+						font-size 30px
+
+				h2
+					font-size 30px
+					padding 0.6em 0px
+					margin 0
+					span
+						border none
+			.mkt
+				background #F2DEDE
+				border-left 5px solid #D9534F
+				color #d9534f
+			.capacitacion
+				background #FCF8E3
+				border-left 5px solid #F0AD4E
+				color #f0ad4e
+			.asesoria
+				background #DFF0D8
+				border-left 5px solid #47A447
+				color #5cb85c
+			.desarrollo
+				background #F4F8FA
+				color azul
+				border-left 5px solid azul
+
+			.mkt-body
+				background #F2DEDE
+				margin -0.5em 1em 0 1em
+				box-shadow 2px 2px 1px gray
+			.asesoria-body
+				background #DFF0D8
+				margin -0.5em 1em 0 1em
+				box-shadow 2px 2px 1px gray
+			.capacitacion-body
+				background #FCF8E3
+				margin -0.5em 1em 0 1em
+				box-shadow 2px 2px 1px gray
+			.desarrollo-body
+				background #F4F8FA
+				margin -0.5em 1em 0 1em
+				box-shadow 2px 2px 1px gray
+	.section-work-process
+		color black
+		.article-work-process
+			position relative
+			h2
+				font-size 30px
+				letter-spacing -1px
+				span
+					border-right 3px solid black
+					font-size 24px
+
+			.box-par
+			.last-box
+				.proceso
+					&:before
+						display none						
+			.proceso
+				&:before
+					font-family icomoon
+					content "\e605"
+					position absolute
+					top 40%
+					right -10px
+					margin-top -10px
+				.proceso-box
+					background white
+					border-radius 50%
+					text-align center
+					height 120px
+					width 120px
+					padding 20px 10px
+					margin 1em auto 3em
+					span
+						font-size 32px
+						padding 0
+						margin 0
+					h4
+						padding 0
+						margin 0
+	.section-clientes
+		color black
+		margin-bottom 4em
+		.article-clientes
+			position relative
+			h2
+				font-size 30px
+				letter-spacing -1px
+				span
+					border-right 3px solid black
+					font-size 24px
+			.cliente
+				margin 0.2em
+				text-align center 
+				img
+					max-width 90%
+					max-height 64px
+					opacity 0.4
+					&:hover
+						opacity 1
+	.section-projects
+		.article-projects
+			color black
+			.title-projects
+				h2
+				font-size 30px
+				letter-spacing -1px
+				span
+					border-right 3px solid black
+					font-size 24px
+			.containermix
+				.div-box
+					background blue
+					text-align center
+					margin auto 15px
+					position relative
+					overflow hidden
+					figure
+						position relative
+						img
+							width 100%
+							height 200px
+						span
+							position absolute
+							opacity 0
+							top 28%
+							left 45%
+							font-size 32px
+							color #fff
+							background-color rgba(0, 153, 102, 0.3)
+							-webkit-transition all 1s
+							-moz-transition all 1s
+							-o-transition all 1s
+							-ms-transition all 1s
+							transition all 1s
+						.div-caption-box
+							position absolute
+							top 45%
+							bottom auto
+							width 100%
+							background-color rgba(0, 0, 0, .4)
+							color #fff
+							-webkit-transition all 1s
+							-moz-transition all 1s
+							-o-transition all 1s
+							-ms-transition all 1s
+							transition all 1s
+							h3
+								text-align center
+								margin 5px auto
+								padding 0								
+								position relative
+							.spacer
+								width 50px
+								height 2px
+								margin 0 auto
+								background #fff
+							p
+								font-size 18px
+								margin 0
+								padding 0
+						&:hover
+							.div-caption-box
+								position absolute
+								bottom 0
+								background-color rgba(106, 215, 237, .4)
+								top auto
+							span
+								opacity 1 
+	
+@media (min-width: 768px) 
+	header
+		overflow hidden
+		.cont-social
+			position relative
+			float right
+			margin-right 2em
+			.social
+				display inline-block
+				margin 0
+				list-style none
+				padding-left 0
+				li	
+					display inline-block
+					padding-bottom 0
+					a
+						padding 0 0.5em 0 0.5em
+						font-size 3em
+						color black
+						text-decoration none
+						&:hover									
+							.icon-facebook
+								color gray
+								-webkit-transition color 0.5s ease
+								-moz-transition color 0.5s ease
+								-o-transition color 0.5s ease
+								transition color 0.5s ease
+							.icon-twitter
+								color gray
+								-webkit-transition color 0.5s ease
+								-moz-transition color 0.5s ease
+								-o-transition color 0.5s ease
+								transition color 0.5s ease
+							.icon-envelope
+								color gray
+								-webkit-transition color 0.5s ease
+								-moz-transition color 0.5s ease
+								-o-transition color 0.5s ease
+								transition color 0.5s ease
+	.container-head
+		.ar-head
+			position relative
+			.caption-center
+				position absolute
+				bottom 0
+				text-align center
+				h3
+					color white
+					font-size 80px
+					text-shadow black 3px 2.5px 1px
+					font-family 'Roboto', sans-serif
+					text-align center
+					padding-top 0
+					&:after
+						content "Hi, I'M KEVIN."
+						letter-spacing 5px
+				.subtitle
+					color #c79f42
+					font-size 35px
+					text-shadow black 3px 2.5px 1px
+					font-family 'Roboto', sans-serif
+					text-align center
+					&:after
+						content "UX DESIGNER & FRONT-END DEVELOPER"
+						letter-spacing 5px
+
+			.caption-coder
+				position absolute
+				top 150px
+				background azul
+				padding-bottom 0.5em
+				left 160px
+				width 190px
+				&:after
+					border-bottom 42px solid transparent
+					border-left 20px solid azul
+					border-top 42px solid azul
+					border-right 20px solid transparent
+					content " "
+					position absolute
+					top 0
+					right -40px
+				&:before
+					border-top 42px solid transparent
+					border-right 20px solid azul
+					border-bottom 43px solid azul
+					border-left 20px solid transparent
+					content " "
+					position absolute
+				h3
+					color white
+					margin 0px
+					font-size 70px
+					text-shadow black 3px 2.5px 1px
+					font-family 'Roboto', sans-serif
+
+			.caption-and
+				position absolute
+				top 118px
+				left 83px
+				background red
+				width 409px
+				border-top 4px solid black
+				h4
+					margin 0
+					padding 0
+					&:before
+						background #E8E8E8
+						content "&"
+						position absolute
+						top -20px
+						right 190px
+						font-size 32px
+						font-weight bold
+						color black
+						padding 0 0.6em
+						margin 0
+
+			.caption-designer
+				position absolute
+				top 10px
+				background azul
+				padding-bottom 0.5em
+				left 150px				
+				&:after
+					border-bottom 42px solid transparent
+					border-left 20px solid azul
+					border-top 42px solid azul
+					border-right 20px solid transparent
+					content " "
+					position absolute
+					top 0
+				&:before
+					border-top 42px solid transparent
+					border-right 20px solid azul
+					border-bottom 43px solid azul
+					border-left 20px solid transparent
+					content " "
+					position absolute
+					top 0
+					left -40px
+				h3
+					color white
+					margin 0px
+					font-size 70px
+					text-shadow black 3px 2.5px 1px
+					font-family 'Roboto', sans-serif
+
+
+			.caption-img
+				position absolute
+				left 70%
+				top 30px
+				img
+					width 200px
+	.section-about
+		position relative
+		.about
+			.about-history
+				margin-top 2em
+				.timeline
+					padding-left 112px
+					h3
+						text-align left
+						margin-top 0
+						padding-top 0
+						z-index 10
+						margin-bottom 40px
+						padding-bottom 0
+						span
+							position absolute
+							top -15px
+							left -112px
+							width 86px
+							background white
+							border-radius 50%
+							text-align center
+							line-height 78px
+							border 4px solid  azul
+					.evento
+						padding 26px 32px
+						margin-bottom 48px
+						margin-top 0
+						&:first-of-type
+							margin-top 70px
+						&:before
+							border 35px solid transparent
+							border-right-color azul
+							border-width 15px
+							margin-top -15px
+							content " "
+							right 100%
+							top 50%
+							height 10px 
+							position absolute
+							box-sizing border-box
+						&:after
+							border 30px solid transparent
+							border-right  30px solid #E8E8E8
+							border-width 10px
+							margin-top -10px
+							right 100%
+							top 50%
+							position absolute
+							content " "
+							box-sizing border-box
+						.date
+							position absolute
+							top 45%
+							margin-top -24px
+							left -72px
+							color black
+							background #fff
+							box-sizing border-box
+							z-index 10
+							border-color azul
+							font-weight bold
+						p
+							&:before
+								display block
+								content " "
+								position absolute
+								top -64%
+								left -72px
+								height 129%
+								width 4px
+								background azul
+
+
+
+
+			
+	.conta-about2
+		position relative
+		.section-about-2
+			color black
+		.section-moreofme
+			color black
+			.servi
+				position relative
+				background red
+				height 400px
+				width 250px
+				&:active
+					top 2px
+				figure
+					position relative
+					overflow hidden
+					border 1px solid black
+					img
+						position relative
+						height 400px
+						width 250px
+						opacity: 0.7;
+						-webkit-transition: opacity 0.3s;
+						transition: opacity 0.3s;
+					figcaption
+						position absolute
+						top 0px
+						width 100%
+						text-align center
+						background blue
+		.section-work-process
+			.article-work-process
+				.box-3ro
+					.proceso
+						&:before
+							display none
+				.box-par
+					.proceso
+						&:before
+							display inline
+
+
+
+
+
+@media (max-width: 362px)
+	footer
+		.message
+			ul
+				padding-left 5%
+				padding-right 5%
+				li
+					a
+						padding 0 0.5em 0 0.5em
+			
+@media (min-width: 992px)		
+	.conta-about2
+		.section-work-process
+			.article-work-process
+				.box-3ro
+					.proceso
+						&:before
+							display inline
+
+

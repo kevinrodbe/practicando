@@ -1,0 +1,97 @@
+@import url("http://fonts.googleapis.com/css?family=Lato");
+@import url("http://fonts.googleapis.com/css?family=Roboto");
+@import url("http://fonts.googleapis.com/css?family=Oxygen");
+@font-face{font-family:'icomoon';src:url("../fonts/icomoon.eot?-kwg7kr");src:url("../fonts/icomoon.eot?#iefix-kwg7kr") format('embedded-opentype'),url("../fonts/icomoon.woff?-kwg7kr") format('woff'),url("../fonts/icomoon.ttf?-kwg7kr") format('truetype'),url("../fonts/icomoon.svg?-kwg7kr#icomoon") format('svg');font-weight:normal;font-style:normal}
+[class^="icon-"],[class*=" icon-"]{font-family:'icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.icon-envelope:before{content:"\e600"}
+.icon-facebook:before{content:"\e601"}
+.icon-twitter:before{content:"\e602"}
+.icon-github:before{content:"\e603"}
+.icon-linkedin:before{content:"\e604"}
+.icon-arrow-right:before{content:"\e605"}
+body{background:#e8e8e8;color:#444;font-family:'Oxygen',sans-serif;font-size:16px}
+.social{display:none}
+header{background:#000;height:90px;margin-bottom:0;}
+header .container .row .navegacion img{width:60px;}
+header .container .row .navegacion img:hover{opacity:.8;-webkit-transition:background 1s ease;-moz-transition:background 1s ease;-o-transition:background 1s ease;transition:background 1s ease}
+footer{margin-top:1em;border-top:3px #000 solid;padding:2em 0 1em 0;bottom:0;}
+footer h2{color:#000;padding:0;margin:0}
+footer h3{color:#22bce0;padding:0;margin:0}
+footer .message{margin-top:1em;color:#000;text-align:justify;}
+footer .message ul{list-style:none;padding-left:20%;padding-right:15%;}
+footer .message ul li{display:inline-block;}
+footer .message ul li a{padding:0 1em 0 1em;color:#000;text-decoration:none;font-size:24px;}
+footer .message ul li a:hover .icon-facebook{color:#45619d}
+footer .message ul li a:hover .icon-linkedin{color:#0073b2}
+footer .message ul li a:hover .icon-twitter{color:#22bce0}
+footer .contactform{padding-top:1em;}
+footer .contactform .col-sm-6{margin-top:.5em}
+footer .contactform textarea{margin-top:.5em;resize:none}
+footer .contactform .btndv{float:right;}
+footer .contactform .btndv .btn{border:none;font-family:inherit;font-size:inherit;color:inherit;cursor:pointer;padding:15px 50px;display:inline-block;margin:15px 0;text-transform:uppercase;letter-spacing:1px;font-weight:700;outline:none;position:relative;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s;}
+footer .contactform .btndv .btn:after{content:"";position:absolute;z-index:-1;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}
+footer .contactform .btndv .btn:before{font-family:'icomoon';speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;position:relative;-webkit-font-smoothing:antialiased}
+footer .contactform .btndv .btn-3{background:#fcad26;color:#fff;}
+footer .contactform .btndv .btn-3:hover{background:#f29e0d}
+footer .contactform .btndv .btn-3:active{background:#f58500;top:2px}
+footer .contactform .btndv .btn-3:before{position:absolute;height:100%;left:0;top:0;line-height:3;font-size:140%;width:60px}
+footer .contactform .btndv .btn-3e{padding:15px 90px 15px 50px;overflow:hidden;}
+footer .contactform .btndv .btn-3e:before{left:auto;right:10px;top:-8px;z-index:2}
+footer .contactform .btndv .btn-3e:after{width:30%;height:200%;background:rgba(255,255,255,0.1);z-index:1;right:0;top:0;margin:-5px 0 0 -5px;-webkit-transform-origin:0 0;-webkit-transform:rotate(-20deg);-moz-transform-origin:0 0;-moz-transform:rotate(-20deg);-ms-transform-origin:0 0;-ms-transform:rotate(-20deg);transform-origin:0 0;transform:rotate(-20deg)}
+footer .contactform .btndv .btn-3e:hover:after{width:40%;background:rgba(255,255,255,0.1);height:200%;background:rgba(255,255,255,0.1);z-index:1;right:0;top:0;margin:-5px 0 0 -5px;-webkit-transform-origin:0 0;-webkit-transform:rotate(-20deg);-moz-transform-origin:0 0;-moz-transform:rotate(-20deg);-ms-transform-origin:0 0;-ms-transform:rotate(-20deg);transform-origin:0 0;transform:rotate(-20deg)}
+footer .copy{margin-bottom:0}
+.container-slide .slide .content .row1{position:relative;z-index:-2;}
+.container-slide .slide .content .row1 img{height:300px;width:100%}
+.container-slide .slide .content .row1 .caption-center{position:absolute;bottom:1em;right:8%;left:8%;}
+.container-slide .slide .content .row1 .caption-center h3{color:#fff;font-size:32px;text-shadow:#000 3px 2.5px 1px;font-family:'Roboto',sans-serif;text-align:center;letter-spacing:5px;}
+.container-slide .slide .content .row1 .caption-center h3:after{content:"Hi!, I'M KEVIN."}
+.container-slide .slide .content .row1 .caption-center .Subtitle{color:#c79f42;font-size:25px;text-shadow:#000 2px 2px 1px;font-family:'Roboto',sans-serif;text-align:center;}
+.container-slide .slide .content .row1 .caption-center .Subtitle:after{content:"FRONT-END DEVELOPER WHO LOVE CODING";letter-spacing:5px}
+.container-slide .slide .content .row1 .caption-coder{position:absolute;top:10px;right:0;background:#22bce0;padding-bottom:.5em;padding-right:.3em;}
+.container-slide .slide .content .row1 .caption-coder h3{margin:0;color:#fff;font-size:40px;text-shadow:#000 3px 2.5px 1px;font-family:'Roboto',sans-serif;}
+.container-slide .slide .content .row1 .caption-coder h3:before{border-bottom:26px solid transparent;border-right:20px solid #22bce0;border-top:26px solid #22bce0;border-left:20px solid transparent;content:"";position:absolute;top:0;left:-40px}
+.container-slide .slide .content .row1 .caption-designer{position:absolute;top:10px;background:#22bce0;padding-bottom:.5em;}
+.container-slide .slide .content .row1 .caption-designer h3{margin:0;color:#fff;font-size:40px;text-shadow:#000 3px 2.5px 1px;font-family:'Roboto',sans-serif;}
+.container-slide .slide .content .row1 .caption-designer h3:after{border-bottom:26px solid #22bce0;border-left:20px solid #22bce0;border-top:26px solid transparent;border-right:20px solid transparent;content:"";position:absolute;top:0}
+.section-about .about{color:#000;font-family:'Oxygen',sans-serif;}
+.section-about .about h2{font-size:50px}
+.section-about .about p{text-align:justify}
+.section-about .about .about-img{padding-left:30%;}
+.section-about .about .about-img img{height:150px;border-radius:50%;margin-left:1em;margin-right:1em}
+.conta-about2{position:relative;}
+.conta-about2 .section-about-2{color:#000}
+.conta-about2 .section-moreofme{color:#000}
+@media (min-width: 768px){header .container{position:relative;}
+header .container .row .navegacion .social{display:inline-block;margin-left:3em;}
+header .container .row .navegacion .social li a{height:90px;padding-top:20px;font-size:3em;color:#fff;}
+header .container .row .navegacion .social li a:hover .icon-facebook{color:#808080;-webkit-transition:color .5s ease;-moz-transition:color .5s ease;-o-transition:color .5s ease;transition:color .5s ease}
+header .container .row .navegacion .social li a:hover .icon-twitter{color:#808080;-webkit-transition:color .5s ease;-moz-transition:color .5s ease;-o-transition:color .5s ease;transition:color .5s ease}
+header .container .row .navegacion .items{padding-right:10%;padding-left:5%;}
+header .container .row .navegacion .items li a{padding-top:30px;padding:30px 20px 0 20px;height:90px;font-size:18px;color:#fff;}
+header .container .row .navegacion .items li a:hover{border-bottom:#fff 4px solid;color:#808080}
+.container-slide .slide .content .row1{position:relative;z-index:-2;}
+.container-slide .slide .content .row1 img{height:500px;width:100%}
+.container-slide .slide .content .row1 .caption-center{position:absolute;bottom:1em;right:10%;left:10%;}
+.container-slide .slide .content .row1 .caption-center h3{color:#fff;font-size:90px;text-shadow:#000 3px 2.5px 1px;font-family:'Roboto',sans-serif;text-align:center;}
+.container-slide .slide .content .row1 .caption-center h3:after{content:"Hi!, I'M KEVIN.";letter-spacing:5px}
+.container-slide .slide .content .row1 .caption-center .Subtitle{color:#c79f42;font-size:35px;text-shadow:#000 3px 2.5px 1px;font-family:'Roboto',sans-serif;text-align:center;}
+.container-slide .slide .content .row1 .caption-center .Subtitle:after{content:"FRONT-END DEVELOPER WHO LOVE CODING";letter-spacing:5px}
+.container-slide .slide .content .row1 .caption-coder{position:absolute;top:10px;right:0;padding-right:.5em;background:#22bce0;}
+.container-slide .slide .content .row1 .caption-coder h3{margin:0;color:#fff;font-size:70px;text-shadow:#000 3px 2.5px 1px;font-family:'Roboto',sans-serif;}
+.container-slide .slide .content .row1 .caption-coder h3 a{color:#fff}
+.container-slide .slide .content .row1 .caption-coder h3:before{border-bottom:43px solid #22bce0;border-right:20px solid #22bce0;border-top:42px solid transparent;border-left:20px solid transparent;content:" ";position:absolute;top:0;left:-40px}
+.container-slide .slide .content .row1 .caption-designer{position:absolute;top:100px;background:#22bce0;padding-bottom:.5em;}
+.container-slide .slide .content .row1 .caption-designer h3{color:#fff;margin:0;font-size:70px;text-shadow:#000 3px 2.5px 1px;font-family:'Roboto',sans-serif;}
+.container-slide .slide .content .row1 .caption-designer h3:after{border-bottom:42px solid transparent;border-left:20px solid #22bce0;border-top:42px solid #22bce0;border-right:20px solid transparent;content:" ";position:absolute;top:0}
+.section-about .about .about-img{margin-top:3em;padding-left:15%}
+.conta-about2{position:relative;}
+.conta-about2 .section-about-2{color:#000}
+.conta-about2 .section-moreofme{color:#000;}
+.conta-about2 .section-moreofme .servi{position:relative;background:#f00;height:400px;width:250px;}
+.conta-about2 .section-moreofme .servi:active{top:2px}
+.conta-about2 .section-moreofme .servi figure{position:relative;overflow:hidden;border:1px solid #000;}
+.conta-about2 .section-moreofme .servi figure img{position:relative;height:400px;width:250px;opacity:.7;-webkit-transition:opacity .3s;transition:opacity .3s}
+.conta-about2 .section-moreofme .servi figure figcaption{position:absolute;top:0;width:100%;text-align:center;background:#00f}
+}@media (max-width: 362px){footer .message ul{padding-left:5%;padding-right:5%;}
+footer .message ul li a{padding:0 .5em 0 .5em}
+}
